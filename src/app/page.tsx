@@ -29,7 +29,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="mb-16">
+      {/* <section className="mb-16">
         <h2 className="text-2xl font-semibold mb-4">Latest Blog Posts</h2>
         <div className="space-y-4">
           <article className="p-4 border rounded-lg hover:bg-gray-50">
@@ -41,7 +41,7 @@ export default function Home() {
             </Link>
           </article>
         </div>
-      </section>
+      </section> */}
     </div>
   );
 }
