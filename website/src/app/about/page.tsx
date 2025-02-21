@@ -10,8 +10,8 @@ export default function About() {
           digital world.
         </p>
         <p>
-          When I'm not coding, you can find me playing piano, reading classic
-          novel, or working on personal projects.
+          When I'm not coding, you can find me playing piano, reading books, or
+          working on personal projects.
         </p>
       </div>
     </div>
