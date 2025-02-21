@@ -3,7 +3,7 @@ import Link from "next/link";
 export default function Blog() {
   const posts = [
     {
-      slug: "signs-from-universe",
+      slug: "on-signs-from-the-universe",
       title: "On Signs from the Universe",
       date: "February 20, 2025",
       excerpt:

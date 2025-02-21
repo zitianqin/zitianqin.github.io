@@ -33,7 +33,7 @@ export default function Home() {
         <h2 className="text-2xl font-semibold mb-4">Latest Blog Posts</h2>
         <div className="space-y-4">
           <article className="p-4 border rounded-lg hover:bg-gray-50">
-            <Link href="/blog/signs-from-universe">
+            <Link href="/blog/on-signs-from-the-universe">
               <h3 className="text-xl font-medium">
                 On Signs from the Universe
               </h3>
