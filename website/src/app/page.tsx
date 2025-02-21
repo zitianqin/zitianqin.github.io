@@ -24,7 +24,7 @@ export default function Home() {
           <ProjectCard
             title="Discord Message Scheduler"
             description="Bot for scheduling messages"
-            link="/messenger-bot"
+            link="https://github.com/zitianqin/Discord-Messenger-Bot"
           />
         </div>
       </section>
