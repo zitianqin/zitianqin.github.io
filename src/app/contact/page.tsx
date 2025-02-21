@@ -12,6 +12,16 @@ export default function Contact() {
             </a>
           </li>
           <li>
+            LinkedIn:{" "}
+            <a
+              href="https://www.linkedin.com/in/zitian-qin/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Zitian Qin
+            </a>
+          </li>
+          <li>
             GitHub:{" "}
             <a
               href="https://github.com/zitianqin"
