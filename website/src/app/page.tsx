@@ -18,7 +18,7 @@ export default function Home() {
           />
           <ProjectCard
             title="WisLock"
-            description="Smart Website Blocker"
+            description="Smart website blocker"
             link="https://www.wislockapp.com"
           />
           <ProjectCard
