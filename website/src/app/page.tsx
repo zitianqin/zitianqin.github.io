@@ -12,14 +12,14 @@ export default function Home() {
         <h2 className="text-2xl font-semibold mb-4">Projects</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           <ProjectCard
-            title="FlowmoTime"
-            description="Evidence-based focus timer"
-            link="https://www.flowmotime.com"
-          />
-          <ProjectCard
             title="WisLock"
             description="Smart website blocker"
             link="https://www.wislockapp.com"
+          />
+          <ProjectCard
+            title="FlowmoTime"
+            description="Evidence-based focus timer"
+            link="https://www.flowmotime.com"
           />
           <ProjectCard
             title="Discord Message Scheduler"
