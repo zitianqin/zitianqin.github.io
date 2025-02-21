@@ -7,8 +7,8 @@ export default function Contact() {
         <ul>
           <li>
             Email:{" "}
-            <a href="mailto:zitian.qin@student.unsw.edu.au">
-              zitian.qin@student.unsw.edu.au
+            <a href="mailto:zitianqinpublic@gmail.com">
+              zitianqinpublic@gmail.com
             </a>
           </li>
           <li>
