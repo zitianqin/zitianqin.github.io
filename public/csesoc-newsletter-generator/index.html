@@ -180,6 +180,20 @@
 
         <button id="generate-btn">Generate Newsletter</button>
         <div id="download-link"></div>
+        <div id="preview-container" style="display: none">
+          <h2 style="margin-top: 20px; text-align: center">
+            Newsletter Preview
+          </h2>
+          <div
+            id="newsletter-preview"
+            style="
+              border: 1px solid #ddd;
+              border-radius: 5px;
+              margin-top: 15px;
+              overflow: auto;
+            "
+          ></div>
+        </div>
       </div>
     </div>
 
@@ -736,6 +750,19 @@
               };
             });
 
+            // Generate preview with local data
+            const previewContainer =
+              document.getElementById("preview-container");
+            const previewElement =
+              document.getElementById("newsletter-preview");
+            const localHtml = generateNewsletterHTML(
+              events,
+              articles,
+              opportunities
+            );
+            previewElement.innerHTML = localHtml;
+            previewContainer.style.display = "block";
+
             // Send the data to backend
             fetch("https://csesoc-newsletter-generator.vercel.app/generate", {
               method: "POST",
@@ -757,10 +784,12 @@
                   const url = URL.createObjectURL(blob);
 
                   downloadLink.innerHTML = `
-                    <a href="${url}" download="newsletter.html">Download Newsletter HTML</a>
-                    <p>Right-click and select "Save as" to download the newsletter</p>
+                    <a href="${url}" download="newsletter.html">Click Here to Download Newsletter HTML</a>
                   `;
                   downloadLink.style.display = "block";
+
+                  // Update preview with server-generated HTML if it differs
+                  previewElement.innerHTML = htmlContent;
                 } else {
                   alert("Error: " + data.error);
                 }
