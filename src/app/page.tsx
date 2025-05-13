@@ -22,6 +22,11 @@ export default function Home() {
             link="https://www.wislockapp.com"
           />
           <ProjectCard
+            title="StudyBuddy AI"
+            description="Watches you when you study 👀 - made in 5 hours"
+            link="https://www.linkedin.com/posts/chris-yoo_hack-sleep-hack-repeat-just-36-hours-ugcPost-7271117053770493953-xmuk?utm_source=share&utm_medium=member_desktop&rcm=ACoAAC3GNeUBc1Q8e-1VBIL0G3DYYBb_MrdOy6M"
+          />
+          <ProjectCard
             title="FlowmoTime"
             description="Evidence-based focus timer"
             link="https://www.flowmotime.com"
