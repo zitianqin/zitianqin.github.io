@@ -4,7 +4,7 @@ export default function Home() {
       <section className="mb-16">
         <h1 className="text-4xl font-bold mb-4">Zitian Qin</h1>
         <p className="text-xl">
-          Aspiring Software Engineer and CS Student @ UNSW
+          Software Engineer and CS Student @ UNSW
         </p>
       </section>
 
