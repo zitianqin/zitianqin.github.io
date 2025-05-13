@@ -23,7 +23,7 @@ export default function Home() {
           />
           <ProjectCard
             title="StudyBuddy AI"
-            description="Watches you when you study 👀 - made in 5 hours"
+            description="Watches you when you study 👀 – made in 5 hours"
             link="https://www.linkedin.com/posts/chris-yoo_hack-sleep-hack-repeat-just-36-hours-ugcPost-7271117053770493953-xmuk?utm_source=share&utm_medium=member_desktop&rcm=ACoAAC3GNeUBc1Q8e-1VBIL0G3DYYBb_MrdOy6M"
           />
           <ProjectCard
@@ -35,6 +35,11 @@ export default function Home() {
             title="Discord Message Scheduler"
             description="Bot for scheduling messages"
             link="https://github.com/zitianqin/Discord-Messenger-Bot"
+          />
+          <ProjectCard
+            title="CSESoc Newsletter Generator"
+            description="(Small project) – Facebook doesn't like scraping, so it's manual now"
+            link="https://zitianqin.com/csesoc-newsletter-generator/"
           />
         </div>
         <div className="mt-8 text-center">
