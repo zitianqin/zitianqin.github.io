@@ -23,7 +23,7 @@ export default function Home() {
           />
           <ProjectCard
             title="StudyBuddy AI"
-            description="Watches you when you study 👀 – made in 5 hours"
+            description="Watches you when you study 👀 – made in 5 hours (Hackathon Prize Winner)"
             link="https://www.linkedin.com/posts/chris-yoo_hack-sleep-hack-repeat-just-36-hours-ugcPost-7271117053770493953-xmuk?utm_source=share&utm_medium=member_desktop&rcm=ACoAAC3GNeUBc1Q8e-1VBIL0G3DYYBb_MrdOy6M"
           />
           <ProjectCard
@@ -38,7 +38,7 @@ export default function Home() {
           />
           <ProjectCard
             title="CSESoc Newsletter Generator"
-            description="(Small project) – Facebook doesn't like scraping, so it's manual now"
+            description="Very quick and small project but one that saves a lot of time"
             link="https://zitianqin.com/csesoc-newsletter-generator/"
           />
         </div>
