@@ -11,7 +11,7 @@ export default function Header() {
   };
 
   return (
-    <header className="border-b mb-8">
+    <header className="border-b">
       <nav className="max-w-4xl mx-auto px-4 py-4 relative">
         <div className="flex items-center justify-between">
           <Link href="/" className="text-xl font-bold">
