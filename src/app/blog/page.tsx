@@ -1,22 +1,22 @@
-import Link from "next/link";
+// import Link from "next/link";
 
 export default function Blog() {
-  const posts = [
-    {
-      slug: "on-signs-from-the-universe",
-      title: "On Signs from the Universe",
-      date: "February 20, 2025",
-      excerpt:
-        "Exploring the connections between dreams, coincidences, and patterns in our daily lives.",
-    },
-    {
-      slug: "next-steps",
-      title: "Next Steps",
-      date: "July 4, 2025",
-      excerpt:
-        "Reflecting on my journey and looking into where I want to go from here.",
-    },
-  ];
+  // const posts = [
+  //   {
+  //     slug: "on-signs-from-the-universe",
+  //     title: "On Signs from the Universe",
+  //     date: "February 20, 2025",
+  //     excerpt:
+  //       "Exploring the connections between dreams, coincidences, and patterns in our daily lives.",
+  //   },
+  //   {
+  //     slug: "next-steps",
+  //     title: "Next Steps",
+  //     date: "July 4, 2025",
+  //     excerpt:
+  //       "Reflecting on my journey and looking into where I want to go from here.",
+  //   },
+  // ];
 
   return (
     // <div className="max-w-4xl mx-auto px-4 py-8">
