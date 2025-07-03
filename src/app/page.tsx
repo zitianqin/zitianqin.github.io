@@ -3,9 +3,7 @@ export default function Home() {
     <div className="max-w-4xl mx-auto px-4 py-16">
       <section className="mb-16">
         <h1 className="text-4xl font-bold mb-4">Zitian Qin</h1>
-        <p className="text-xl">
-          Software Engineer and CS Student @ UNSW
-        </p>
+        <p className="text-xl">CS Student @ UNSW</p>
       </section>
 
       <section className="mb-16">
@@ -19,7 +17,7 @@ export default function Home() {
           <ProjectCard
             title="WisLock"
             description="Smart website blocker (Hackathon Prize Winner)"
-            link="https://www.wislockapp.com"
+            link="https://chromewebstore.google.com/detail/wislock-smart-website-blo/bicajookbbojofgpjkmlicgbfhagjnia"
           />
           <ProjectCard
             title="StudyBuddy AI"
