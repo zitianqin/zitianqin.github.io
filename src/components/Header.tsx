@@ -71,6 +71,11 @@ export default function Header() {
               </Link>
             </li>
             <li>
+              <Link href="/projects" className="hover:underline">
+                Projects
+              </Link>
+            </li>
+            <li>
               <Link href="/contact" className="hover:underline">
                 Contact
               </Link>
@@ -99,6 +104,11 @@ export default function Header() {
             <li>
               <Link href="/hackathons" className="block hover:underline px-4">
                 Hackathons
+              </Link>
+            </li>
+            <li>
+              <Link href="/projects" className="block hover:underline px-4">
+                Projects
               </Link>
             </li>
             <li>
