@@ -8,13 +8,24 @@ export default function Hackathons() {
         <li>
           <span className="font-semibold">Winner:</span>{" "}
           <Link
+            href="https://sussyuni.com/"
+            className="underline"
+            target="_blank"
+          >
+            Sussy Uni
+          </Link>{" "}
+          – 1st Place at DevSoc Game Jam Hackathon 2025
+        </li>
+        <li>
+          <span className="font-semibold">Winner:</span>{" "}
+          <Link
             href="https://getagenti.com"
             className="underline"
             target="_blank"
           >
             Agenti
           </Link>{" "}
-          for NextGen Ventures FoundersHack Sydney 2025
+          – 1st Place at NextGen Ventures FoundersHack Sydney 2025
         </li>
         <li>
           <span className="font-semibold">Winner: Best use of DataStax</span>{" "}
