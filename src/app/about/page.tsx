@@ -4,7 +4,7 @@ export default function About() {
       <h1 className="text-4xl font-bold mb-8">About Me</h1>
       <div className="prose dark:prose-invert">
         <p>
-          Hi, I'm Zitian Qin, a Computer Science student
+          Hi, I'm Zitian, a Computer Science student
           at UNSW. I'm passionate about building tools that help people work
           more effectively and stay focused in our increasingly distracting
           digital world.
