@@ -7,7 +7,6 @@ export function ContactCard({
   handle,
   url,
   preferred,
-  icon,
 }: {
   name: string;
   handle: string;

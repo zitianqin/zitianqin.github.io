@@ -1,6 +1,6 @@
 "use client";
 
-import { Canvas, ThreeElements, useFrame } from "@react-three/fiber";
+import { Canvas, useFrame } from "@react-three/fiber";
 import { useRef, useMemo, useEffect, useState } from "react";
 import * as THREE from "three";
 
@@ -83,7 +83,7 @@ function BillboardText({
     ctx.font = "bold 64px Inter, Arial, sans-serif";
     ctx.fillText(title, 48, 120);
     ctx.font = "32px Inter, Arial, sans-serif";
-    const lines = wrapText(ctx, description, 48, 200, 928, 44);
+    wrapText(ctx, description, 48, 200, 928, 44);
     const tex = new THREE.CanvasTexture(canvas);
     tex.anisotropy = 4;
     tex.needsUpdate = true;
@@ -148,15 +148,6 @@ function FloatingRig({ children }: { children: React.ReactNode }) {
 
 export default function ProjectCards3D({ data }: { data: CardData[] }) {
   const [reducedMotion, setReducedMotion] = useState(false);
-  useEffect(() => {
-    const mql = window.matchMedia("(prefers-reduced-motion: reduce)");
-    const update = () => setReducedMotion(mql.matches);
-    update();
-    mql.addEventListener("change", update);
-    return () => mql.removeEventListener("change", update);
-  }, []);
-
-  if (reducedMotion) return null;
 
   const positions: [number, number, number][] = useMemo(() => {
     const arr: [number, number, number][] = [];
@@ -171,6 +162,16 @@ export default function ProjectCards3D({ data }: { data: CardData[] }) {
     }
     return arr;
   }, [data.length]);
+
+  useEffect(() => {
+    const mql = window.matchMedia("(prefers-reduced-motion: reduce)");
+    const update = () => setReducedMotion(mql.matches);
+    update();
+    mql.addEventListener("change", update);
+    return () => mql.removeEventListener("change", update);
+  }, []);
+
+  if (reducedMotion) return null;
 
   return (
     <div className="relative h-[520px] rounded-xl overflow-hidden border">

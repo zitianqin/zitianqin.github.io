@@ -2,55 +2,8 @@
 
 import { Canvas, useFrame } from "@react-three/fiber";
 import { PointMaterial } from "@react-three/drei";
-import { Suspense, useEffect, useMemo, useRef, useState } from "react";
+import { Suspense, useEffect, useMemo, useState } from "react";
 import * as THREE from "three";
-
-function StaticPoints({
-  count = 2000,
-  minRadius = 10,
-  maxRadius = 26,
-  color = "#bcd1ff",
-  size = 0.03,
-  opacity = 0.95,
-}: {
-  count?: number;
-  minRadius?: number;
-  maxRadius?: number;
-  color?: string;
-  size?: number;
-  opacity?: number;
-}) {
-  const geometry = useMemo(() => {
-    const g = new THREE.BufferGeometry();
-    const pts = new Float32Array(count * 3);
-    for (let i = 0; i < count; i++) {
-      const r = minRadius + Math.random() * (maxRadius - minRadius);
-      const theta = Math.random() * Math.PI * 2;
-      const phi = Math.acos(2 * Math.random() - 1);
-      const x = r * Math.sin(phi) * Math.cos(theta);
-      const y = r * Math.sin(phi) * Math.sin(theta);
-      const z = r * Math.cos(phi);
-      pts[i * 3] = x;
-      pts[i * 3 + 1] = y;
-      pts[i * 3 + 2] = z;
-    }
-    g.setAttribute("position", new THREE.BufferAttribute(pts, 3));
-    return g;
-  }, [count, minRadius, maxRadius]);
-
-  return (
-    <points geometry={geometry}>
-      <PointMaterial
-        transparent
-        color={color}
-        size={size}
-        sizeAttenuation
-        depthWrite={false}
-        opacity={opacity}
-      />
-    </points>
-  );
-}
 
 function DriftPoints({
   count = 2000,
