@@ -77,9 +77,7 @@ function DriftPoints({
     const nearPlaneZ = 19; // when stars cross this, they recycle
     const totalSpan = nearPlaneZ + maxRadius + 60; // distance behind camera to recycle from
     for (let i = 0; i < count; i++) {
-      // Use sqrt sampling so density is even across the disk (no empty-looking center)
-      const u = Math.random();
-      const r = minRadius + Math.sqrt(u) * (maxRadius - minRadius);
+      const r = minRadius + Math.random() * (maxRadius - minRadius);
       const theta = Math.random() * Math.PI * 2;
       const x = Math.cos(theta) * r;
       const y = Math.sin(theta) * r;
@@ -107,9 +105,8 @@ function DriftPoints({
       const base = i * 3;
       arr[base + 2] += speeds[i] * delta;
       if (arr[base + 2] > nearZ) {
-        // Recycle with sqrt radial sampling to avoid ring clustering
-        const u = Math.random();
-        const r = minRadius + Math.sqrt(u) * (maxRadius - minRadius);
+        // Recycle with a chance to appear closer for continuous presence
+        const r = minRadius + Math.random() * (maxRadius - minRadius);
         const theta = Math.random() * Math.PI * 2;
         arr[base] = Math.cos(theta) * r;
         arr[base + 1] = Math.sin(theta) * r;
@@ -170,7 +167,7 @@ export default function ConstellationBackground() {
           {/* Near layer - faster drift, closer to center */}
           <DriftPoints
             count={5200}
-            minRadius={0}
+            minRadius={2}
             maxRadius={18}
             color="#dbe5ff"
             size={0.04}
