@@ -3,20 +3,20 @@ export default function Home() {
     <div className="max-w-4xl mx-auto px-4 py-16">
       <section className="mb-16">
         <h1 className="text-4xl font-bold mb-4">Zitian Qin</h1>
-        <p className="text-xl">I like building stuff</p>
+        <p className="text-xl">Building...</p>
       </section>
       <section className="mb-16">
-        <h2 className="text-2xl font-semibold mb-4">What I've been up to</h2>
+        <h2 className="text-2xl font-semibold mb-4">About Me</h2>
         <div className="prose dark:prose-invert">
+          <p>Hi, I'm currently a Computer Science student at UNSW.</p>
           <p>
-            Hi, I'm Zitian Qin, a software engineer and Computer Science student
-            at UNSW. I'm passionate about building tools that help people work
-            more effectively and stay focused in our increasingly distracting
-            digital world.
+            I'm passionate about building tools that help people work more
+            effectively and stay focused in our increasingly distracting digital
+            world.
           </p>
           <p>
-            When I'm not coding, you can find me playing piano, reading books,
-            or working on personal projects.
+            When I'm not coding, you can find me playing piano, badminton or
+            reading books.
           </p>
         </div>
       </section>
