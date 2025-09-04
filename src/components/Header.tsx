@@ -61,13 +61,13 @@ export default function Header() {
               </Link>
             </li> */}
             <li>
-              <Link href="/hackathons" className="hover:underline">
-                Hackathons
+              <Link href="/projects" className="hover:underline">
+                Projects
               </Link>
             </li>
             <li>
-              <Link href="/projects" className="hover:underline">
-                Projects
+              <Link href="/hackathons" className="hover:underline">
+                Hackathons
               </Link>
             </li>
             <li>
@@ -92,13 +92,13 @@ export default function Header() {
               </Link>
             </li>
             <li>
-              <Link href="/hackathons" className="block hover:underline px-4">
-                Hackathons
+              <Link href="/projects" className="block hover:underline px-4">
+                Projects
               </Link>
             </li>
             <li>
-              <Link href="/projects" className="block hover:underline px-4">
-                Projects
+              <Link href="/hackathons" className="block hover:underline px-4">
+                Hackathons
               </Link>
             </li>
             <li>
