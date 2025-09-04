@@ -1,3 +1,6 @@
+import { ProjectCard } from "@/components/ProjectCard";
+import { projects } from "@/data/projects";
+
 export default function Home() {
   return (
     <div className="max-w-4xl mx-auto px-4 py-16">
@@ -18,6 +21,21 @@ export default function Home() {
             When I'm not coding, you can find me playing piano, badminton, or
             reading books.
           </p>
+        </div>
+      </section>
+      <section className="mb-16">
+        <h2 className="text-2xl font-semibold mb-4">What I'm Working On</h2>
+        <div className="space-y-6">
+          {projects
+            .filter((p) => p.featured)
+            .map((p) => (
+              <ProjectCard
+                key={p.title}
+                title={p.title}
+                description={p.description}
+                link={p.link}
+              />
+            ))}
         </div>
       </section>
       {/* <section className="mb-16">
