@@ -29,7 +29,7 @@ export default function Projects() {
       <p className="text-xl text-gray-700 dark:text-gray-300 mb-8">
         A selection of things I've built, mostly at hackathons or for fun.
       </p>
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+      <div className="space-y-6 text-center">
         <ProjectCard
           title="PrintJarvis"
           description="Instantly spot weak walls and problem geometries before PLA FDM printing using contextually-aware tools. Built at HACK48."
