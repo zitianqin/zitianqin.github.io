@@ -2,8 +2,10 @@ export default function Contact() {
   return (
     <div className="max-w-4xl mx-auto px-4 py-8">
       <h1 className="text-4xl font-bold mb-8">Contact</h1>
+      <p className="text-xl text-gray-700 dark:text-gray-300 mb-8">
+        You can reach me through any of the following channels:
+      </p>
       <div className="prose dark:prose-invert">
-        <p>You can reach me through any of the following channels:</p>
         <ul>
           <li>
             LinkedIn:{" "}
