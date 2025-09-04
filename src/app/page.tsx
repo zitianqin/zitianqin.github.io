@@ -3,7 +3,7 @@ export default function Home() {
     <div className="max-w-4xl mx-auto px-4 py-16">
       <section className="mb-16">
         <h1 className="text-4xl font-bold mb-4">Zitian Qin</h1>
-        <p className="text-xl">CS Student @ UNSW</p>
+        <p className="text-xl">I like building stuff</p>
       </section>
       <section className="mb-16">
         <h2 className="text-2xl font-semibold mb-4">What I've been up to</h2>
