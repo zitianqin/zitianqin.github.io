@@ -80,7 +80,7 @@ export default function Header() {
 
         {/* Mobile menu */}
         {isMenuOpen && (
-          <ul className="md:hidden absolute top-full left-0 right-0 bg-white dark:bg-black border-b py-4 space-y-4 shadow-lg z-40">
+          <ul className="md:hidden absolute top-full left-0 right-0 bg-black border-b py-4 space-y-4 shadow-lg z-40">
             <li>
               <Link href="/" className="block hover:underline px-4">
                 Home

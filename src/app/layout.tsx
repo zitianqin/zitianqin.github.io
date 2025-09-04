@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
 import Header from "@/components/Header";
+import ConstellationBackground from "@/components/ConstellationBackground";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -24,6 +25,7 @@ export default function RootLayout({
         className={`${inter.className} bg-background text-foreground min-h-[100dvh] flex flex-col`}
       >
         <Header />
+        <ConstellationBackground />
         <main className="flex-1 pt-8">{children}</main>
       </body>
     </html>

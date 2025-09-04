@@ -6,13 +6,11 @@ export default function Home() {
     <div className="max-w-4xl mx-auto px-4 py-16">
       <section className="mb-16">
         <h1 className="text-4xl font-bold mb-4">Zitian Qin</h1>
-        <p className="text-xl text-gray-700 dark:text-gray-300 mb-8">
-          I like building things.
-        </p>
+        <p className="text-xl text-gray-600 mb-8">I like building things.</p>
       </section>
       <main className="mb-16">
         <h2 className="text-2xl font-semibold mb-4">About Me</h2>
-        <div className="prose dark:prose-invert">
+        <div className="prose prose-invert">
           <p>Hi, I'm currently a Computer Science student at UNSW.</p>
           <p>
             I'm passionate about building tools that help people work more
