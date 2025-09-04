@@ -15,7 +15,7 @@ export default function Home() {
             world.
           </p>
           <p>
-            When I'm not coding, you can find me playing piano, badminton or
+            When I'm not coding, you can find me playing piano, badminton, or
             reading books.
           </p>
         </div>
