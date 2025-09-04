@@ -7,7 +7,18 @@ export default function Home() {
       </section>
       <section className="mb-16">
         <h2 className="text-2xl font-semibold mb-4">What I've been up to</h2>
-        <p className="text-gray-600">Building...</p>
+        <div className="prose dark:prose-invert">
+          <p>
+            Hi, I'm Zitian Qin, a software engineer and Computer Science student
+            at UNSW. I'm passionate about building tools that help people work
+            more effectively and stay focused in our increasingly distracting
+            digital world.
+          </p>
+          <p>
+            When I'm not coding, you can find me playing piano, reading books,
+            or working on personal projects.
+          </p>
+        </div>
       </section>
       {/* <section className="mb-16">
         <h2 className="text-2xl font-semibold mb-4">Latest Blog Posts</h2>

@@ -55,11 +55,6 @@ export default function Header() {
                 Home
               </Link>
             </li>
-            <li>
-              <Link href="/about" className="hover:underline">
-                About
-              </Link>
-            </li>
             {/* <li>
               <Link href="/blog" className="hover:underline">
                 Blog
@@ -89,11 +84,6 @@ export default function Header() {
             <li>
               <Link href="/" className="block hover:underline px-4">
                 Home
-              </Link>
-            </li>
-            <li>
-              <Link href="/about" className="block hover:underline px-4">
-                About
               </Link>
             </li>
             <li>
