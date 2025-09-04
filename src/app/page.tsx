@@ -6,7 +6,9 @@ export default function Home() {
     <div className="max-w-4xl mx-auto px-4 py-16">
       <section className="mb-16">
         <h1 className="text-4xl font-bold mb-4">Zitian Qin</h1>
-        <p className="text-xl">Building...</p>
+        <p className="text-xl text-gray-700 dark:text-gray-300 mb-8">
+          I like building things.
+        </p>
       </section>
       <section className="mb-16">
         <h2 className="text-2xl font-semibold mb-4">About Me</h2>
