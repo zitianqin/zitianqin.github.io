@@ -6,12 +6,6 @@ export default function Contact() {
         <p>You can reach me through any of the following channels:</p>
         <ul>
           <li>
-            Email:{" "}
-            <a href="mailto:zitianqinpublic@gmail.com">
-              zitianqinpublic@gmail.com
-            </a>
-          </li>
-          <li>
             LinkedIn:{" "}
             <a
               href="https://www.linkedin.com/in/zitian-qin/"
@@ -19,7 +13,8 @@ export default function Contact() {
               rel="noopener noreferrer"
             >
               Zitian Qin
-            </a>
+            </a>{" "}
+            (Preferred)
           </li>
           <li>
             GitHub:{" "}
@@ -29,6 +24,12 @@ export default function Contact() {
               rel="noopener noreferrer"
             >
               @zitianqin
+            </a>
+          </li>
+          <li>
+            Email:{" "}
+            <a href="mailto:zitianqinpublic@gmail.com">
+              zitianqinpublic@gmail.com
             </a>
           </li>
         </ul>

@@ -31,6 +31,11 @@ export default function Projects() {
       </p>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
         <ProjectCard
+          title="PrintJarvis"
+          description="Instantly spot weak walls and problem geometries before PLA FDM printing using contextually-aware tools. Built at HACK48."
+          link="http://printjarvis.com/"
+        />
+        <ProjectCard
           title="Agenti"
           description="Allows anyone to automate tasks on the web using plain English. 1st Place at NextGen Ventures FoundersHack Sydney 2025."
           link="https://getagenti.com"
