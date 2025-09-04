@@ -4,6 +4,10 @@ export default function Hackathons() {
   return (
     <div className="max-w-4xl mx-auto px-4 py-8">
       <h1 className="text-4xl font-bold mb-8">Hackathons</h1>
+      <p className="text-xl text-gray-700 dark:text-gray-300 mb-8">
+        I love hackathons – they’re where I learn fastest, build things, and
+        meet great people.
+      </p>
       <ul className="space-y-6">
         <li>
           <span className="font-semibold">Winner:</span>{" "}
