@@ -10,7 +10,7 @@ export default function Home() {
           I like building things.
         </p>
       </section>
-      <section className="mb-16">
+      <main className="mb-16">
         <h2 className="text-2xl font-semibold mb-4">About Me</h2>
         <div className="prose dark:prose-invert">
           <p>Hi, I'm currently a Computer Science student at UNSW.</p>
@@ -24,7 +24,7 @@ export default function Home() {
             reading books.
           </p>
         </div>
-      </section>
+      </main>
       <section className="mb-16">
         <h2 className="text-2xl font-semibold mb-4">What I'm Working On</h2>
         <div className="space-y-6">
