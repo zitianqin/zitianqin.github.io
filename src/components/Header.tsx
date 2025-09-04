@@ -13,14 +13,10 @@ export default function Header() {
   return (
     <header className="border-b">
       <nav className="max-w-4xl mx-auto px-4 py-4 relative">
-        <div className="flex items-center justify-between">
-          <Link href="/" className="text-xl font-bold">
-            Zitian Qin
-          </Link>
-
+        <div className="relative flex items-center justify-center">
           {/* Hamburger button */}
           <button
-            className="md:hidden p-2 z-50"
+            className="md:hidden p-2 z-50 absolute right-0 top-1/2 -translate-y-1/2"
             onClick={toggleMenu}
             aria-label="Toggle menu"
           >
