@@ -19,16 +19,15 @@ export default function Home() {
 
       {/* About Section */}
       <main className="mb-16">
-        <div className="bg-white/5 backdrop-blur-sm border border-white/10 rounded-2xl p-6 md:p-8">
+        <div className="bg-white/5 backdrop-blur-sm border border-white/10 rounded-2xl p-6 md:p-8 text-center">
           <h2 className="text-2xl font-semibold mb-4 text-center">About Me</h2>
           <div className="prose prose-invert max-w-none">
             <p className="text-base leading-relaxed mb-3 text-gray-300">
               Hi, I'm currently a Computer Science student at UNSW.
             </p>
             <p className="text-base leading-relaxed mb-3 text-gray-300">
-              I'm passionate about building tools that help people work more
-              effectively and stay focused in our increasingly distracting
-              digital world.
+              I'm passionate about building tools that make a difference in the
+              world.
             </p>
             <p className="text-base leading-relaxed text-gray-300">
               When I'm not coding, you can find me playing piano, badminton, or
