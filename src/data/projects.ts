@@ -16,7 +16,7 @@ export const projects: Project[] = [
   {
     title: "Agenti",
     description:
-      "Allows anyone to automate tasks on the web using plain English. 1st Place at NextGen Ventures FoundersHack Sydney 2025.",
+      "Allows anyone to automate tasks on the web using plain English. 1st Place at NextGen Ventures FoundersHack Sydney 2025 and interviewed at YC.",
     link: "https://getagenti.com",
   },
   {

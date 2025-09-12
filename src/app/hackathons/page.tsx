@@ -13,7 +13,7 @@ const hackathons = [
     link: "https://getagenti.com",
     achievement: "Winner",
     description:
-      "Agenti - Allows anyone to automate tasks on the web using plain English. 1st Place at NextGen Ventures FoundersHack Sydney 2025.",
+      "Agenti - Allows anyone to automate tasks on the web using plain English. 1st Place at NextGen Ventures FoundersHack Sydney 2025 and interviewed at YC.",
   },
   {
     title: "UNIHACK 2025",
