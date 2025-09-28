@@ -1,5 +1,5 @@
-import { ProjectCard } from "@/components/ProjectCard";
-import { projects } from "@/data/projects";
+// import { ProjectCard } from "@/components/ProjectCard";
+// import { projects } from "@/data/projects";
 
 export default function Home() {
   return (
@@ -30,7 +30,7 @@ export default function Home() {
               world.
             </p>
             <p className="text-base leading-relaxed text-gray-300">
-              When I'm not coding, you can find me playing piano, badminton, or
+              In the rare instances when I'm not coding you might find me playing piano, badminton, or
               reading books.
             </p>
           </div>
@@ -38,7 +38,7 @@ export default function Home() {
       </main>
 
       {/* Featured Projects Section */}
-      <section className="mb-16">
+      {/* <section className="mb-16">
         <div className="text-center mb-8">
           <h2 className="text-2xl font-semibold mb-3">What I'm Working On</h2>
           <div className="w-20 h-px bg-gradient-to-r from-transparent via-white/30 to-transparent mx-auto"></div>
@@ -55,7 +55,7 @@ export default function Home() {
               />
             ))}
         </div>
-      </section>
+      </section> */}
     </div>
   );
 }
