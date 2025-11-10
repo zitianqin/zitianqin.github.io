@@ -104,6 +104,19 @@
         margin-top: 10px;
       }
 
+      .reorder-btn {
+        background-color: #6c757d;
+        color: white;
+        margin-top: 10px;
+        margin-right: 5px;
+      }
+
+      .button-group {
+        display: flex;
+        gap: 5px;
+        margin-top: 10px;
+      }
+
       #generate-btn {
         background-color: #4caf50;
         color: white;
@@ -116,6 +129,7 @@
 
       .delete-btn:hover,
       .add-btn:hover,
+      .reorder-btn:hover,
       #generate-btn:hover {
         opacity: 0.9;
       }
@@ -261,6 +275,36 @@
           return deleteBtn;
         }
 
+        function createReorderButtons(container, card) {
+          const buttonGroup = document.createElement("div");
+          buttonGroup.className = "button-group";
+
+          const moveUpBtn = document.createElement("button");
+          moveUpBtn.className = "reorder-btn";
+          moveUpBtn.textContent = "↑ Move Up";
+          moveUpBtn.addEventListener("click", function () {
+            const previousCard = card.previousElementSibling;
+            if (previousCard) {
+              container.insertBefore(card, previousCard);
+            }
+          });
+
+          const moveDownBtn = document.createElement("button");
+          moveDownBtn.className = "reorder-btn";
+          moveDownBtn.textContent = "↓ Move Down";
+          moveDownBtn.addEventListener("click", function () {
+            const nextCard = card.nextElementSibling;
+            if (nextCard) {
+              container.insertBefore(nextCard, card);
+            }
+          });
+
+          buttonGroup.appendChild(moveUpBtn);
+          buttonGroup.appendChild(moveDownBtn);
+
+          return buttonGroup;
+        }
+
         function addEventForm() {
           const card = createFormCard();
 
@@ -298,6 +342,9 @@
           descInput.className = "event-desc";
           card.appendChild(descGroup);
 
+          const buttonGroup = createReorderButtons(eventsContainer, card);
+          card.appendChild(buttonGroup);
+
           const deleteBtn = createDeleteButton(eventsContainer, card);
           card.appendChild(deleteBtn);
 
@@ -331,6 +378,9 @@
           descInput.className = "article-desc";
           card.appendChild(descGroup);
 
+          const buttonGroup = createReorderButtons(articlesContainer, card);
+          card.appendChild(buttonGroup);
+
           const deleteBtn = createDeleteButton(articlesContainer, card);
           card.appendChild(deleteBtn);
 
@@ -353,6 +403,9 @@
           );
           descInput.className = "opportunity-desc";
           card.appendChild(descGroup);
+
+          const buttonGroup = createReorderButtons(opportunitiesContainer, card);
+          card.appendChild(buttonGroup);
 
           const deleteBtn = createDeleteButton(opportunitiesContainer, card);
           card.appendChild(deleteBtn);
