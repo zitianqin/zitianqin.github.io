@@ -30,7 +30,7 @@ class RLAgent {
 
   // Get state representation based on player's recent moves
   private getState(): string {
-    const historyLength = Math.min(3, this.playerHistory.length);
+    const historyLength = Math.min(10, this.playerHistory.length);
     if (historyLength === 0) return "start";
     return this.playerHistory.slice(-historyLength).join("-");
   }

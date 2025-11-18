@@ -43,14 +43,6 @@ export default function Header() {
                 Contact
               </Link>
             </li>
-            <li>
-              <Link
-                href="/scissors"
-                className="px-2 md:px-4 py-2 rounded-lg text-sm font-medium transition-all duration-300"
-              >
-                RPS Game
-              </Link>
-            </li>
           </ul>
         </div>
       </nav>
