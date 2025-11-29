@@ -117,7 +117,6 @@ export default function ConstellationBackground() {
         <Suspense fallback={null}>
           <fog attach="fog" args={["#02040a", 60, 220]} />
           <ambientLight intensity={0.2} />
-          {/* Near layer - faster drift, closer to center */}
           <DriftPoints
             count={5200}
             minRadius={2}
@@ -126,16 +125,6 @@ export default function ConstellationBackground() {
             size={0.04}
             opacity={1}
             speed={0.35}
-          />
-          {/* Far layer - slower drift, wider spread */}
-          <DriftPoints
-            count={8200}
-            minRadius={20}
-            maxRadius={60}
-            color="#9fb4ff"
-            size={0.025}
-            opacity={0.85}
-            speed={0.12}
           />
         </Suspense>
       </Canvas>
