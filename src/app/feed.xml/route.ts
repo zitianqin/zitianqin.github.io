@@ -1,6 +1,8 @@
 import RSS from 'rss';
 import { getSortedPostsData } from '@/lib/posts';
 
+export const dynamic = 'force-static';
+
 export async function GET() {
   const posts = getSortedPostsData();
   const siteUrl = 'https://zitianqin.github.io';
