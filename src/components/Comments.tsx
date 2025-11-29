@@ -7,9 +7,9 @@ export default function Comments() {
     <Giscus
       id="comments"
       repo="zitianqin/zitianqin.github.io"
-      repoId="R_kgDONU5t_g"
+      repoId="R_kgDOJMw0Wg"
       category="Announcements"
-      categoryId="DIC_kwDONU5t_s4Ckl_D"
+      categoryId="DIC_kwDOJMw0Ws4CzL3C"
       mapping="pathname"
       term="Welcome to @giscus/react component!"
       reactionsEnabled="1"
