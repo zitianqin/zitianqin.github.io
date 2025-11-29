@@ -25,6 +25,7 @@ export default function Projects() {
             description={project.description}
             href={project.link}
             isExternal={true}
+            badges={project.achievement ? [project.achievement] : undefined}
           />
         ))}
       </div>

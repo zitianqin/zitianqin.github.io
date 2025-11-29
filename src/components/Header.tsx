@@ -29,14 +29,6 @@ export default function Header() {
             </li>
             <li>
               <Link
-                href="/hackathons"
-                className="px-2 md:px-4 py-2 rounded-lg text-sm font-medium transition-all duration-300"
-              >
-                Hackathons
-              </Link>
-            </li>
-            <li>
-              <Link
                 href="/blog"
                 className="px-2 md:px-4 py-2 rounded-lg text-sm font-medium transition-all duration-300"
               >
