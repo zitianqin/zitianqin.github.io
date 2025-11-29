@@ -9,11 +9,15 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@giscus/react": "^3.1.0",
     "@react-three/drei": "^10.7.4",
     "@react-three/fiber": "^9.3.0",
+    "gray-matter": "^4.0.3",
     "next": "15.1.7",
+    "next-mdx-remote": "^5.0.0",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
+    "rss": "^1.2.2",
     "three": "^0.180.0"
   },
   "devDependencies": {
@@ -22,6 +26,7 @@
     "@types/node": "^20",
     "@types/react": "^19",
     "@types/react-dom": "^19",
+    "@types/rss": "^0.0.32",
     "eslint": "^9",
     "eslint-config-next": "15.1.7",
     "postcss": "^8",

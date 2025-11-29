@@ -37,6 +37,14 @@ export default function Header() {
             </li>
             <li>
               <Link
+                href="/blog"
+                className="px-2 md:px-4 py-2 rounded-lg text-sm font-medium transition-all duration-300"
+              >
+                Blog
+              </Link>
+            </li>
+            <li>
+              <Link
                 href="/contact"
                 className="px-2 md:px-4 py-2 rounded-lg text-sm font-medium transition-all duration-300"
               >

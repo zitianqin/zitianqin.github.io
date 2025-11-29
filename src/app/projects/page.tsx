@@ -1,5 +1,5 @@
 import React from "react";
-import { ProjectCard } from "@/components/ProjectCard";
+import { Card } from "@/components/Card";
 import { projects } from "@/data/projects";
 
 export default function Projects() {
@@ -19,11 +19,12 @@ export default function Projects() {
       {/* Projects Grid */}
       <div className="space-y-8">
         {projects.map((project) => (
-          <ProjectCard
+          <Card
             key={project.title}
             title={project.title}
             description={project.description}
-            link={project.link}
+            href={project.link}
+            isExternal={true}
           />
         ))}
       </div>

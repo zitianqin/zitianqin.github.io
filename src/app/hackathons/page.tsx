@@ -1,4 +1,4 @@
-import { HackathonCard } from "@/components/HackathonCard";
+import { Card } from "@/components/Card";
 
 const hackathons = [
   {
@@ -56,12 +56,13 @@ export default function Hackathons() {
       {/* Hackathons Grid */}
       <div className="space-y-6">
         {hackathons.map((hackathon, index) => (
-          <HackathonCard
+          <Card
             key={index}
             title={hackathon.title}
             description={hackathon.description}
-            link={hackathon.link}
-            achievement={hackathon.achievement}
+            href={hackathon.link}
+            isExternal={true}
+            badges={[hackathon.achievement]}
           />
         ))}
       </div>

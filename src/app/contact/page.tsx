@@ -1,4 +1,4 @@
-import { ContactCard } from "@/components/ContactCard";
+import { Card } from "@/components/Card";
 
 const contactMethods = [
   {
@@ -41,13 +41,13 @@ export default function Contact() {
       {/* Contact Methods */}
       <div className="space-y-6">
         {contactMethods.map((method, index) => (
-          <ContactCard
+          <Card
             key={index}
-            name={method.name}
-            handle={method.handle}
-            url={method.url}
-            preferred={method.preferred}
-            icon={method.icon}
+            title={method.name}
+            description={method.handle}
+            href={method.url}
+            isExternal={method.name !== "Email"}
+            badges={method.preferred ? ["Preferred"] : undefined}
           />
         ))}
       </div>

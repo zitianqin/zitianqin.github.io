@@ -1,5 +1,5 @@
-// import { ProjectCard } from "@/components/ProjectCard";
-// import { projects } from "@/data/projects";
+import { Card } from "@/components/Card";
+import { projects } from "@/data/projects";
 
 export default function Home() {
   return (
@@ -38,7 +38,7 @@ export default function Home() {
       </main>
 
       {/* Featured Projects Section */}
-      {/* <section className="mb-16">
+      <section className="mb-16">
         <div className="text-center mb-8">
           <h2 className="text-2xl font-semibold mb-3">What I'm Working On</h2>
           <div className="w-20 h-px bg-gradient-to-r from-transparent via-white/30 to-transparent mx-auto"></div>
@@ -47,15 +47,16 @@ export default function Home() {
           {projects
             .filter((p) => p.featured)
             .map((p) => (
-              <ProjectCard
+              <Card
                 key={p.title}
                 title={p.title}
                 description={p.description}
-                link={p.link}
+                href={p.link}
+                isExternal={true}
               />
             ))}
         </div>
-      </section> */}
+      </section>
     </div>
   );
 }
