@@ -12,6 +12,11 @@ export const metadata: Metadata = {
   icons: {
     icon: "/chopin.png",
   },
+  alternates: {
+    types: {
+      "application/rss+xml": [{ url: "feed.xml", title: "Zitian Qin's Blog" }],
+    },
+  },
 };
 
 export default function RootLayout({
