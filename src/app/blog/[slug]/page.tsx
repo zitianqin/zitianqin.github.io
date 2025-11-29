@@ -24,7 +24,7 @@ export default async function Post({ params }: { params: Promise<{ slug: string 
         <time>{postData.date}</time>
       </div>
       
-      <div className="prose prose-invert max-w-none mb-12">
+      <div className="prose prose-invert max-w-none mb-32">
         <MDXRemote source={postData.content} />
       </div>
 

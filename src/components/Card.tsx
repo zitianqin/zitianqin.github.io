@@ -28,8 +28,8 @@ export function Card({
     const rect = el.getBoundingClientRect();
     const px = (e.clientX - rect.left) / rect.width;
     const py = (e.clientY - rect.top) / rect.height;
-    const rotateY = (px - 0.5) * 8; // left-right
-    const rotateX = (0.5 - py) * 6; // up-down
+    const rotateY = (0.5 - px) * 8; // left-right
+    const rotateX = (py - 0.5) * 6; // up-down
     el.style.transform = `perspective(800px) rotateX(${rotateX}deg) rotateY(${rotateY}deg) translateZ(0)`;
   };
 
