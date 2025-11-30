@@ -1,5 +1,4 @@
-// import { Card } from "@/components/Card";
-// import { projects } from "@/data/projects";
+
 
 export default function Home() {
   return (
@@ -44,17 +43,7 @@ export default function Home() {
           <div className="w-20 h-px bg-gradient-to-r from-transparent via-white/30 to-transparent mx-auto"></div>
         </div>
         <div className="space-y-8">
-          {/* {projects
-            .filter((p) => p.featured)
-            .map((p) => (
-              <Card
-                key={p.title}
-                title={p.title}
-                description={p.description}
-                href={p.link}
-                isExternal={true}
-              />
-            ))} */}
+
           <p className="text-center text-gray-400">
             Cool stuff coming soon... :)
           </p>

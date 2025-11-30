@@ -5,6 +5,16 @@ import { PointMaterial } from "@react-three/drei";
 import { Suspense, useEffect, useMemo, useState } from "react";
 import * as THREE from "three";
 
+type DriftPointsProps = {
+  count?: number;
+  minRadius?: number;
+  maxRadius?: number;
+  color?: string;
+  size?: number;
+  opacity?: number;
+  speed?: number;
+};
+
 function DriftPoints({
   count = 2000,
   minRadius = 10,
@@ -13,15 +23,7 @@ function DriftPoints({
   size = 0.03,
   opacity = 0.95,
   speed = 2.0,
-}: {
-  count?: number;
-  minRadius?: number;
-  maxRadius?: number;
-  color?: string;
-  size?: number;
-  opacity?: number;
-  speed?: number;
-}) {
+}: DriftPointsProps) {
   // Build a cylindrical starfield with randomized initial depths and per-star speeds
   const { geometry, speeds, nearZ, span } = useMemo(() => {
     const g = new THREE.BufferGeometry();

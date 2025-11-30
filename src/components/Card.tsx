@@ -70,14 +70,14 @@ export function Card({
     </div>
   );
 
-  const className = "group block p-6 border border-white/10 rounded-2xl bg-white/5 backdrop-blur-sm hover:bg-white/10 hover:border-white/20 transition-all duration-300 will-change-transform h-full flex flex-col";
+  const CARD_CLASSNAME = "group block p-6 border border-white/10 rounded-2xl bg-white/5 backdrop-blur-sm hover:bg-white/10 hover:border-white/20 transition-all duration-300 will-change-transform h-full flex flex-col";
 
   if (isExternal) {
     return (
       <a
         ref={ref}
         href={href}
-        className={className}
+        className={CARD_CLASSNAME}
         onMouseMove={onMove}
         onMouseLeave={onLeave}
         target="_blank"
@@ -92,7 +92,7 @@ export function Card({
     <Link
       ref={ref}
       href={href}
-      className={className}
+      className={CARD_CLASSNAME}
       onMouseMove={onMove}
       onMouseLeave={onLeave}
     >

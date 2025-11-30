@@ -2,6 +2,8 @@
 
 import Link from "next/link";
 
+const NAV_LINK_CLASSNAME = "px-2 md:px-4 py-2 rounded-lg text-sm font-medium transition-all duration-300";
+
 export default function Header() {
   return (
     <header className="relative">
@@ -14,7 +16,7 @@ export default function Header() {
             <li>
               <Link
                 href="/"
-                className="px-2 md:px-4 py-2 rounded-lg text-sm font-medium transition-all duration-300"
+                className={NAV_LINK_CLASSNAME}
               >
                 Home
               </Link>
@@ -22,7 +24,7 @@ export default function Header() {
             <li>
               <Link
                 href="/projects"
-                className="px-2 md:px-4 py-2 rounded-lg text-sm font-medium transition-all duration-300"
+                className={NAV_LINK_CLASSNAME}
               >
                 Projects
               </Link>
@@ -30,7 +32,7 @@ export default function Header() {
             <li>
               <Link
                 href="/blog"
-                className="px-2 md:px-4 py-2 rounded-lg text-sm font-medium transition-all duration-300"
+                className={NAV_LINK_CLASSNAME}
               >
                 Blog
               </Link>
@@ -38,7 +40,7 @@ export default function Header() {
             <li>
               <Link
                 href="/contact"
-                className="px-2 md:px-4 py-2 rounded-lg text-sm font-medium transition-all duration-300"
+                className={NAV_LINK_CLASSNAME}
               >
                 Contact
               </Link>
