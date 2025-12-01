@@ -1,4 +1,5 @@
 import { getPostData, getSortedPostsData } from '@/lib/posts';
+import { formatDate } from '@/lib/utils';
 import { MDXRemote } from 'next-mdx-remote/rsc';
 import Comments from '@/components/Comments';
 
@@ -18,10 +19,10 @@ export default async function Post({ params }: { params: Promise<{ slug: string 
   }
 
   return (
-    <article className="max-w-4xl mx-auto px-4 py-8">
+    <article className="container max-w-4xl py-12 md:py-24">
       <h1 className="text-4xl font-bold mb-4">{postData.title}</h1>
-      <div className="text-gray-600 mb-8">
-        <time>{postData.date}</time>
+      <div className="text-muted-foreground mb-8">
+        <time>{formatDate(postData.date)}</time>
       </div>
       
       <div className="prose prose-invert max-w-none mb-20">

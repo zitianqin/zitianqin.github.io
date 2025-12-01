@@ -1,53 +1,65 @@
 "use client";
 
+import { useState } from "react";
 import Link from "next/link";
-
-const NAV_LINK_CLASSNAME = "px-2 md:px-4 py-2 rounded-lg text-sm font-medium transition-all duration-300";
+import { Menu, X } from "lucide-react";
 
 export default function Header() {
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+
   return (
-    <header className="relative">
-      <nav className="max-w-4xl mx-auto px-4 py-5 relative">
-        {/* Subtle border with gradient */}
-        <div className="absolute bottom-0 left-4 right-4 h-px bg-gradient-to-r from-transparent via-white/20 to-transparent"></div>
-        <div className="relative flex items-center justify-center">
-          {/* Navigation menu - always visible */}
-          <ul className="flex space-x-1 md:space-x-2">
-            <li>
-              <Link
-                href="/"
-                className={NAV_LINK_CLASSNAME}
-              >
-                Home
-              </Link>
-            </li>
-            <li>
-              <Link
-                href="/projects"
-                className={NAV_LINK_CLASSNAME}
-              >
-                Projects
-              </Link>
-            </li>
-            <li>
-              <Link
-                href="/blog"
-                className={NAV_LINK_CLASSNAME}
-              >
-                Blog
-              </Link>
-            </li>
-            <li>
-              <Link
-                href="/contact"
-                className={NAV_LINK_CLASSNAME}
-              >
-                Contact
-              </Link>
-            </li>
-          </ul>
+    <header className="sticky top-0 z-50 w-full border-b border-border/40 bg-background md:bg-background/95 md:backdrop-blur md:supports-[backdrop-filter]:bg-background/60 transition-colors duration-300">
+      <div className="container max-w-4xl flex h-14 items-center justify-between">
+        <div className="flex items-center gap-6">
+          <Link href="/" className="flex items-center space-x-2">
+            <span className="font-bold sm:inline-block">Zitian Qin</span>
+          </Link>
+          <nav className="hidden md:flex items-center gap-6 text-sm font-medium text-muted-foreground">
+            <Link
+              href="/projects"
+              className="transition-colors hover:text-foreground"
+            >
+              Projects
+            </Link>
+            <Link
+              href="/blog"
+              className="transition-colors hover:text-foreground"
+            >
+              Blog
+            </Link>
+          </nav>
         </div>
-      </nav>
+        <button
+          className="md:hidden p-2 -mr-6 text-muted-foreground hover:text-foreground"
+          onClick={() => setIsMenuOpen(!isMenuOpen)}
+        >
+          {isMenuOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
+        </button>
+      </div>
+      <div
+        className={`md:hidden absolute top-14 left-0 w-full border-b border-border/40 bg-background z-50 transition-all duration-300 ease-in-out ${
+          isMenuOpen
+            ? "opacity-100 translate-y-0 pointer-events-auto"
+            : "opacity-0 -translate-y-4 pointer-events-none"
+        }`}
+      >
+        <div className="container max-w-4xl py-4 flex flex-col gap-4">
+          <Link
+            href="/projects"
+            className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors"
+            onClick={() => setIsMenuOpen(false)}
+          >
+            Projects
+          </Link>
+          <Link
+            href="/blog"
+            className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors"
+            onClick={() => setIsMenuOpen(false)}
+          >
+            Blog
+          </Link>
+        </div>
+      </div>
     </header>
   );
 }

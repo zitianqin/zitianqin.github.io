@@ -1,54 +1,67 @@
+"use client";
 
+import Link from "next/link";
+import { Github, Linkedin, Mail } from "lucide-react";
+import Typewriter from "typewriter-effect";
 
 export default function Home() {
   return (
-    <div className="max-w-4xl mx-auto px-4 py-12">
+    <div className="container max-w-4xl py-12 md:py-24">
       {/* Hero Section */}
-      <section className="mb-16 text-center">
-        <div className="relative">
-          <h1 className="text-4xl md:text-5xl font-bold mb-4 bg-gradient-to-r from-white via-gray-200 to-gray-400 bg-clip-text text-transparent">
-            Zitian Qin
-          </h1>
-          <p className="text-lg md:text-xl text-gray-400 mb-6 max-w-2xl mx-auto">
-            I like building things that matter.
-          </p>
-          <div className="w-20 h-px bg-gradient-to-r from-transparent via-white/30 to-transparent mx-auto"></div>
+      <section className="mb-16 md:mb-24">
+        <h1 className="text-4xl font-bold tracking-tight sm:text-5xl md:text-6xl lg:text-7xl min-h-[1.2em]">
+          <Typewriter
+            onInit={(typewriter) => {
+              typewriter
+                .typeString("Hi, I'm Zitian.")
+                .start();
+            }}
+            options={{
+              cursor: "_",
+              delay: 75,
+            }}
+          />
+        </h1>
+        <p className="mt-6 text-xl text-muted-foreground md:text-2xl max-w-2xl">
+          I like building things that matter.
+        </p>
+        <div className="mt-8 flex gap-4">
+          <Link
+            href="https://github.com/zitianqin"
+            target="_blank"
+            className="text-muted-foreground hover:text-foreground transition-colors"
+          >
+            <Github className="h-6 w-6" />
+            <span className="sr-only">GitHub</span>
+          </Link>
+          <Link
+            href="https://www.linkedin.com/in/zitian-qin"
+            target="_blank"
+            className="text-muted-foreground hover:text-foreground transition-colors"
+          >
+            <Linkedin className="h-6 w-6" />
+            <span className="sr-only">LinkedIn</span>
+          </Link>
+          <Link
+            href="mailto:zitianqinpublic@gmail.com"
+            className="text-muted-foreground hover:text-foreground transition-colors"
+          >
+            <Mail className="h-6 w-6" />
+            <span className="sr-only">Email</span>
+          </Link>
         </div>
       </section>
 
       {/* About Section */}
-      <main className="mb-16">
-        <div className="bg-white/5 backdrop-blur-sm border border-white/10 rounded-2xl p-6 md:p-8 text-center">
-          <h2 className="text-2xl font-semibold mb-4 text-center">About Me</h2>
-          <div className="prose prose-invert max-w-none">
-            <p className="text-base leading-relaxed mb-3 text-gray-300">
-              Hi, I'm currently a Computer Science student at UNSW.
-            </p>
-            <p className="text-base leading-relaxed mb-3 text-gray-300">
-              I'm passionate about building tools that make a difference in the
-              world.
-            </p>
-            <p className="text-base leading-relaxed text-gray-300">
-              In the rare instances when I'm not coding you might find me playing piano, badminton, or
-              reading books.
-            </p>
-          </div>
-        </div>
-      </main>
-
-      {/* Featured Projects Section */}
-      <section className="mb-16">
-        <div className="text-center mb-8">
-          <h2 className="text-2xl font-semibold mb-3">What I'm Working On</h2>
-          <div className="w-20 h-px bg-gradient-to-r from-transparent via-white/30 to-transparent mx-auto"></div>
-        </div>
-        <div className="space-y-8">
-
-          <p className="text-center text-gray-400">
-            Cool stuff coming soon... :)
+      <section className="mb-16 md:mb-24">
+        <h2 className="text-2xl font-semibold tracking-tight mb-6">About</h2>
+        <div className="prose prose-neutral dark:prose-invert max-w-none text-muted-foreground">
+          <p className="leading-relaxed">
+            Hi, I'm currently a Computer Science student at UNSW. I'm passionate about building tools that make a difference in the world. In the rare instances when I'm not coding you might find me playing piano, badminton, or reading books.
           </p>
         </div>
       </section>
+
     </div>
   );
 }

@@ -1,32 +1,36 @@
 import React from "react";
-import { Card } from "@/components/Card";
 import { projects } from "@/data/projects";
+import Link from "next/link";
 
 export default function Projects() {
   return (
-    <div className="max-w-4xl mx-auto px-4 py-12">
-      {/* Header Section */}
-      <section className="mb-12 text-center">
-        <h1 className="text-4xl md:text-5xl font-bold mb-4 bg-gradient-to-r from-white via-gray-200 to-gray-400 bg-clip-text text-transparent">
-          Projects
-        </h1>
-        <p className="text-lg md:text-xl text-gray-400 mb-6 max-w-2xl mx-auto">
+    <div className="container max-w-4xl py-12 md:py-24">
+      <div className="mb-12">
+        <h1 className="text-3xl font-bold tracking-tight mb-4">Projects</h1>
+        <p className="text-muted-foreground text-lg max-w-2xl">
           A selection of things I've built, mostly at hackathons or for fun.
         </p>
-        <div className="w-20 h-px bg-gradient-to-r from-transparent via-white/30 to-transparent mx-auto"></div>
-      </section>
+      </div>
 
-      {/* Projects Grid */}
-      <div className="space-y-8">
+      <div className="flex flex-col gap-8">
         {projects.map((project) => (
-          <Card
+          <Link
             key={project.title}
-            title={project.title}
-            description={project.description}
             href={project.link}
-            isExternal={true}
-            badges={project.achievement ? [project.achievement] : undefined}
-          />
+            target="_blank"
+            className="group block"
+          >
+            <div className="flex flex-col gap-2">
+              <div className="flex items-center justify-between">
+                <h2 className="text-xl font-semibold tracking-tight group-hover:underline decoration-2 underline-offset-4">
+                  {project.title}
+                </h2>
+              </div>
+              <p className="text-muted-foreground group-hover:underline decoration-2 underline-offset-4">
+                {project.description}
+              </p>
+            </div>
+          </Link>
         ))}
       </div>
     </div>
