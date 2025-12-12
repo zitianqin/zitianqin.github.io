@@ -1,7 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import { Github, Linkedin, Mail } from "lucide-react";
+import { Github, Linkedin, Mail, Instagram } from "lucide-react";
 import Typewriter from "typewriter-effect";
 
 export default function Home() {
@@ -41,6 +41,14 @@ export default function Home() {
           >
             <Linkedin className="h-6 w-6" />
             <span className="sr-only">LinkedIn</span>
+          </Link>
+          <Link
+            href="https://www.instagram.com/zitibuilds/"
+            target="_blank"
+            className="text-muted-foreground hover:text-foreground transition-colors"
+          >
+            <Instagram className="h-6 w-6" />
+            <span className="sr-only">Instagram</span>
           </Link>
           <Link
             href="mailto:zitianqinpublic@gmail.com"
